@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="level8.css" />
+  <title>FILL THE FORM</title>
+  </head>
+<style>
+  input#name:invalid:focus{
+  border:1px solid red;
+  }
+  </style>
+<body>
+   <br>
+  <form id="user-form">
+   <label for="name">Enter your Name</label>
+   <input required type="text" id="name" name="name">
+<br>
+<br>
+   <label for="email">Enter your Email Id</label>
+   <input required type="email" id="email" name="email">
+<br><br>
+
+   <label for="password">Enter your Password</label>
+   <input required type="password" id="password" name="password">
+<br>
+<br>
+   <label for="dob">Enter your Date of Birth</label>
+   <input required type="date" id="dob" name="dob" value=Date()>
+   
+<br>
+<br>
+   <input  type="checkbox" id="acceptTerms" name="acceptTerms">
+   <label for="acceptTerms">Accept Terms & Conditions</label>
+<br>
+<br>
+   <button type="submit">Submit</button>
+</form>
+          
+  
+  <div
+  class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+<div class="mx-auto">
+    <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+    <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+</div>
+<script src="level8.js"></script>
+</body>
+
+</html>
